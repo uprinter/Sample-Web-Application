@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+}
+a {
+    color: #0250B0;
+}
+input {
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+}
+
+/* Login form */
+.central-block {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+    .central-block > div {
+        text-align: center;
+        margin-bottom: 11px;
+        overflow: hidden;
+        position: relative;
+    }
+        .central-block div div.error {
+            color: red;
+            font-size: 0.8rem;
+            text-align: right;
+            clear: both;
+            padding-left: 140px;
+            padding-top: 3px;
+        }
+        .central-block div div.label {
+            float: left;
+            line-height: 38px;
+            color: #525252;
+        }
+        .central-block div input {
+            width: 460px;
+            padding: 7px 17px;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+            float: right;
+        }
+    .central-block input[type="submit"] {
+        background-color: #5bafdd;
+        color: #ffffff;
+        border-width: 0px;
+    }
+    .central-block input[type="submit"]:hover {
+        background-color: #60bbec;
+        cursor: pointer;
+    }
+    .central-block .buttons div {
+        float: left;
+        width: 50%;
+    }
+    .central-block .buttons div a {
+        padding: 14px 20px;
+        display: block;
+    }
+
+.content-table {
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+    .content-table td {
+        padding: 3px 7px;
+        text-align: left;
+    }
+    .content-table td:last-child {
+        text-align: right;
+    }
+        .content-table td a.remove {
+            color: red;
+        }
+
+/* Top menu */
+.top-menu {
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+    .top-menu a:hover {
+        background-color: #e2e2e2;
+    }
+    .top-menu a {
+        padding: 10px 15px;
+        float: right;
+    }
+
+/* Congratulation */
+.congratulation {
+    font-size: 1.4rem;
+}
+
+.required:after {
+    color: red;
+    content: " *";
+}
